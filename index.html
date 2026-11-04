@@ -133,30 +133,37 @@
   </section>
 
   <!-- ======================= VÍDEOS ======================= -->
-  <section class="section" id="videos" aria-labelledby="videos-titulo">
-    <div class="container">
-      <h2 class="section__title reveal" id="videos-titulo">A campanha em movimento</h2>
+  <section class="section section--videos" id="videos" aria-labelledby="videos-titulo">
+    <div class="section--videos__bg" aria-hidden="true">
+      <div class="section--videos__glow"></div>
+      <svg class="section--videos__bolt section--videos__bolt--1" viewBox="0 0 100 160"><polygon points="60,0 15,90 45,90 35,160 90,60 55,60" /></svg>
+      <svg class="section--videos__bolt section--videos__bolt--2" viewBox="0 0 100 160"><polygon points="60,0 15,90 45,90 35,160 90,60 55,60" /></svg>
+    </div>
+    <div class="container center-text" style="position:relative;">
+      <p class="eyebrow reveal">Deu vontade, deu Faísca</p>
+      <h2 class="section__title section__title--big reveal" id="videos-titulo">A campanha <em>em movimento</em></h2>
+      <p class="section__lead reveal" style="margin-inline:auto;">Dois cortes verticais, feitos pra tela do seu celular — do jeito que a campanha vai rodar nos stories e no feed.</p>
+
       <div class="video-grid">
         <figure class="video-card reveal">
-          <video controls playsinline preload="metadata" poster="assets/lata-zero.jpg">
-            <source src="assets/deu-vontade-deu-faisca.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo HTML5.
-          </video>
+          <span class="video-card__tag">Novo</span>
+          <div class="video-card__frame">
+            <video controls playsinline preload="metadata">
+              <source src="assets/faisca-zero-filme.mp4" type="video/mp4">
+              Seu navegador não suporta vídeo HTML5.
+            </video>
+          </div>
           <figcaption>"Deu vontade. Deu Faísca." — o filme do lançamento</figcaption>
         </figure>
         <figure class="video-card reveal">
-          <video controls playsinline preload="metadata">
-            <source src="assets/abrindo.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo HTML5.
-          </video>
-          <figcaption>O som que só uma Faísca gelada faz</figcaption>
-        </figure>
-        <figure class="video-card video-card--vertical reveal">
-          <video controls playsinline preload="metadata">
-            <source src="assets/assinatura.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo HTML5.
-          </video>
-          <figcaption>Assinatura da campanha</figcaption>
+          <span class="video-card__tag video-card__tag--alt">Assinatura</span>
+          <div class="video-card__frame">
+            <video controls playsinline preload="metadata">
+              <source src="assets/assinatura.mp4" type="video/mp4">
+              Seu navegador não suporta vídeo HTML5.
+            </video>
+          </div>
+          <figcaption>O fechamento da campanha, em três segundos de raio</figcaption>
         </figure>
       </div>
     </div>
