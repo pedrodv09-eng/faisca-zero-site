@@ -770,36 +770,6 @@ tfoot th, tfoot td{
 /* legenda simples para leitores que dependem de texto, reforça o que a cor transmite */
 .capacidade__barra::after{ content: ""; }
 
-/* ===================== RISCOS ===================== */
-.riscos{
-  display: grid;
-  gap: 18px;
-  grid-template-columns: 1fr;
-  margin-bottom: 1.6em;
-}
-@media (min-width: 640px){
-  .riscos{ grid-template-columns: 1fr 1fr; }
-}
-.risco{
-  background: rgba(246,245,239,.06);
-  border: 1px solid rgba(246,245,239,.14);
-  border-radius: var(--radius);
-  padding: 22px 20px;
-}
-.risco h3{
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: var(--amarelo);
-  margin-bottom: .4em;
-}
-.risco p{ font-size: .92rem; color: var(--texto-muted); }
-.riscos__indicador{
-  text-align: center;
-  font-size: .95rem;
-  color: var(--off-white);
-}
-.riscos__indicador strong{ color: var(--amarelo); }
-
 /* ===================== RODAPÉ ===================== */
 .footer{
   background: var(--preto);
