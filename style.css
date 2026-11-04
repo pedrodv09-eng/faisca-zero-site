@@ -496,6 +496,44 @@ tfoot th, tfoot td{
 }
 .onde__sub{ color: var(--texto-muted); }
 
+.onde__destaque{
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 2rem;
+  padding: 10px 22px 10px 10px;
+  border-radius: 999px;
+  background: rgba(246,245,239,.06);
+  border: 1px solid rgba(242,194,48,.35);
+}
+.onde__badge{
+  display: inline-block;
+  font-family: var(--ff-titulo);
+  font-weight: 700;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--preto);
+  background: var(--amarelo);
+  padding: 6px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.onde__destaque-texto{
+  margin: 0;
+  font-size: .95rem;
+  color: var(--off-white);
+}
+.onde__destaque-texto strong{ color: var(--amarelo); }
+@media (max-width: 480px){
+  .onde__destaque{
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 20px;
+    border-radius: 18px;
+  }
+}
+
 /* ===================== VÍDEOS ===================== */
 .section--videos{
   position: relative;
@@ -680,39 +718,6 @@ tfoot th, tfoot td{
   background: var(--verde);
   transition: width 1s var(--ease);
 }
-
-/* ===================== ONDAS ===================== */
-.ondas{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr;
-}
-@media (min-width: 720px){
-  .ondas{ grid-template-columns: repeat(3, 1fr); }
-}
-.ondas__item{
-  background: var(--branco);
-  border-radius: var(--radius);
-  padding: 26px 22px;
-  box-shadow: 0 6px 24px rgba(11,11,11,.06);
-}
-.ondas__numero{
-  display: inline-block;
-  font-family: var(--ff-titulo);
-  font-weight: 700;
-  font-size: 1.6rem;
-  color: var(--amarelo-escuro);
-  margin-bottom: .3em;
-}
-.ondas__item h3{
-  font-size: 1.05rem;
-  text-transform: uppercase;
-  margin-bottom: .4em;
-}
-.ondas__item p{ font-size: .92rem; color: #4a4a42; }
 
 /* ===================== CAPACIDADE FABRIL ===================== */
 .capacidade{ margin-top: 2rem; }
