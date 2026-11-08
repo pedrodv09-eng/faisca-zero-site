@@ -635,27 +635,29 @@ tfoot th, tfoot td{
   max-width: 260px;
 }
 
-/* ===================== DIVISOR BANCA ===================== */
-.banca-divider{
+/* ===================== DIVISOR ===================== */
+.divider{
   display: flex;
   justify-content: center;
   padding: 40px 0;
   background: var(--preto);
 }
-.banca-divider span{
+.divider span{
   width: 70%;
   max-width: 480px;
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--amarelo), transparent);
 }
 
-.section--banca-intro{
+/* ===================== CTA FINAL ===================== */
+.section--cta-final{
   background: var(--preto);
   color: var(--texto-claro);
   padding-top: 40px;
 }
-.section--banca-intro .section__title{ color: var(--branco); }
-.section--banca-intro .section__lead{ margin-inline: auto; color: var(--texto-muted); opacity: 1; }
+.section--cta-final .section__title{ color: var(--branco); }
+.section--cta-final .section__lead{ margin-inline: auto; color: var(--texto-muted); opacity: 1; }
+.cta-final__btn{ margin-top: 28px; }
 
 /* ===================== RODAPÉ ===================== */
 .footer{
